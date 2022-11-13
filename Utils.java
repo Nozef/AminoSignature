@@ -25,7 +25,7 @@ public class Utils {
         return c;
     }
 
-    public String signature(String data) throws GeneralSecurityException {
+    public static String signature(String data) throws GeneralSecurityException {
         Mac mac = Mac.getInstance("HmacSHA1");
         mac.init(new SecretKeySpec(hexStringToByteArray("f8e7a61ac3f725941e3ac7cae2d688be97f30b93"), "HmacSHA1"));
         byte[] a = mac.doFinal(data.getBytes());

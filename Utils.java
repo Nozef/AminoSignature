@@ -2,7 +2,6 @@ package amino.util;
 
 import java.security.GeneralSecurityException;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.Base64;
 
 import javax.crypto.Mac;
